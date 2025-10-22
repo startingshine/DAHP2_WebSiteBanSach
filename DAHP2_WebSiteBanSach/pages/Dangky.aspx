@@ -7,7 +7,7 @@
     <style type="text/css">
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            background-image: url('../anh/backgrdk.jpg');
             margin: 0;
             padding: 0;
         }
@@ -16,7 +16,9 @@
             max-width: 500px;
             margin: 60px auto;
             padding: 30px;
-            background-color: #ffffff;
+            background-image: url('../anh/anhkhung.jpg');
+            background-size:cover;
+            background-position:center;
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
@@ -96,10 +98,9 @@
             </div>
 
             <asp:Button ID="btnDangKy" runat="server" CssClass="register-button" Text="Đăng ký" OnClick="btnDangKy_Click" />
-
+            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="link-register" PostBackUrl="~/pages/Dangnhap.aspx">Bạn đã có tài khoản? Đăng nhập</asp:LinkButton>
             <asp:Label ID="lblThongBao" runat="server" CssClass="error-message" />
         </div>
     </form>
 </body>
-</html>
->
+

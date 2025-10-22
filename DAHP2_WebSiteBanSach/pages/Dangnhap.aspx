@@ -6,12 +6,27 @@
 <head runat="server">
     <title></title>
     <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../anh/backgrdk.jpg'); /* thay ảnh theo ý thiếu gia */
+    background-size: cover;      /* ảnh phủ toàn màn hình */
+    background-position: center; /* căn giữa ảnh */
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+        }
+
     .login-form {
         max-width: 400px;
         margin: 50px auto;
         padding: 30px;
         border-radius: 12px;
-        background: #f7f9fc;
+        background-image: url('../anh/anhkhung.jpg');
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
@@ -102,7 +117,7 @@
 
     <asp:Button ID="btnDangNhap" runat="server" Text="Đăng nhập" CssClass="login-button" OnClick="btnDangNhap_Click" />
 
-    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="link-register" PostBackUrl="~/Pages/Dangky.aspx">Bạn chưa có tài khoản? Đăng ký</asp:LinkButton>
+    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="link-register" PostBackUrl="~/pages/Dangky.aspx">Bạn chưa có tài khoản? Đăng ký</asp:LinkButton>
 
     <asp:Label ID="lblThongBao" runat="server" CssClass="error-label"></asp:Label>
 </div>

@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="anh\anhkhung.jpg" />
+    <Content Include="anh\backgrdk.jpg" />
     <Content Include="anh\doanhnha.jpg" />
     <Content Include="anh\fahasa-logo.jpg" />
     <Content Include="anh\giamgia.jpg" />
